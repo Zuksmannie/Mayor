@@ -256,6 +256,14 @@ h1{
     border-radius: 3px
 }
 
+ .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
 
 
 
@@ -343,4 +351,40 @@ h1{
   .m-cta, .about-cta, .secondary-cta, .Primary-cta {
     width: 100%;
   }
+
+
+
+
+      .menu-toggle {
+      display: block;
+    }
+
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      padding: 1rem 0;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .nav-menu.active {
+      display: flex;
+    }
+
+    .nav-menu li {
+      list-style: none;
+      padding: 0.75rem 0;
+      text-align: center;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1rem;
+    }
+  
 }
